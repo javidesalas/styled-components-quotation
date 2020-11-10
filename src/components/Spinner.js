@@ -1,5 +1,6 @@
 import React from 'react';
 import './spinner.css'
+import PropTypes from 'prop-types'
 
 const Spinner = ({ cargando }) => (
 	<div className={cargando ? "sk-circle" :  "hide"}>
@@ -17,5 +18,9 @@ const Spinner = ({ cargando }) => (
 		<div className="sk-circle12 sk-child"></div>
 	</div>
 );
+
+Spinner.propTypes = {
+	cargando: PropTypes.bool.isRequired,
+};
 
 export default Spinner;

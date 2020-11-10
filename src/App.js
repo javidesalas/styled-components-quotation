@@ -37,7 +37,7 @@ function App() {
 				{cargando && <Spinner cargando={cargando} />}
 				{(resumen.data && !cargando) && <Resumen data={resumen.data} /> }
 
-				{!cargando && <Resultado cotizacion={resumen.cotizacion} />}
+				{!cargando && <Resultado cotizacion={Number(resumen.cotizacion)} />}
 			</ContenedorFormulario>
 		</Contenedor>
 	);

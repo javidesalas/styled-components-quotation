@@ -19,7 +19,7 @@ const ResultadoCotizacion = styled.div`
 	position: relative;
 `;
 
-const TextoCotizacion = styled.p`
+const TextoCotizacion = styled.span`
 	color: #00838f;
 	padding: 1rem;
 	text-transform: uppercase;
@@ -32,7 +32,7 @@ const Resultado = ({ cotizacion }) => {
 		<Mensaje>Elige marca, año y tipo de seguro</Mensaje>
 	) : (
 		<ResultadoCotizacion>
-			<TransitionGroup component="p" className="resultado">
+			<TransitionGroup component="span" className="resultado">
 				<CSSTransition
 					classNames="resultado"
 					key={cotizacion}

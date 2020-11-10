@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "@emotion/styled";
+import PropTypes from "prop-types";
 
 import {primeraMayuscula} from '../Helper'
 
@@ -23,6 +24,10 @@ const Resumen = ({ data }) => {
 				</ul>
 			</ContenedorResumen>
 		);
+};
+
+Resumen.propTypes = {
+	datos: PropTypes.object.isRequired,
 };
 
 export default Resumen;
